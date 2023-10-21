@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOGBY</title>
+    <link href="background.css" rel="stylesheet" />
+</head>
+<style>
+@media only screen and (max-width: 1279px){
+    /* title */
+    article div.title h1 {
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        text-decoration: underline;
+        margin-top: 20px;
+    }
+
+    div.logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
+    div.intro h2 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    /*about us*/
+    img.about1{
+        margin-top: 75px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+    }
+
+    h1#reason,h1#objective,h1#information{
+        text-align: center;
+        font-size: 25px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p#reason,p#objective,p#information{
+        text-align: left;
+        line-height: 22px;
+        margin-left: 20px;
+        color: rgba(0,0,0,0.8);
+        width: 85%;
+        font-size: 18px;
+    }
+
+    div.empty{
+        clear: both;
+    }
+
+    img.about2 {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+        box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+    }
+
+    img.about3{
+        width: 80%;
+        display: block;
+        margin-top: 75px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+    }
+
+    div.animate3 {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+
+}
+}
+
+
+@media only screen and (min-width:1280px) {
+    /* title */
+    article div.title h1 {
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        text-decoration: underline;
+        margin-top: 200px;
+    }
+
+    div.logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        
+    }
+
+    div.intro h2 {
+        text-align: center;
+        line-height: 40px;
+    }
+
+    /*about us*/
+    img.about1{
+        margin-top: 150px;
+        margin-left: 40px;
+        float: left;
+        width: 45%;
+        box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+    }
+
+    h1#reason{
+        float: left;
+        margin-top: 150px;
+        margin-left: 20px;
+        font-size: 25px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p#reason{
+        display: block;
+        float: left;
+        width: 45%;
+        line-height: 25px;
+        margin-left: 20px;
+        color: rgba(0,0,0,0.8);
+        font-size: 18px;
+    }
+
+    div.empty{
+        clear: both;
+    }
+
+    img.about2 {
+        width: 45%;
+        margin-top: 100px;
+        margin-right: 40px;
+        float: right;
+        box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+    }
+
+    h1#objective{
+        float: left;
+        margin-top: 100px;
+        text-align: left;
+        font-size: 25px;
+        margin-left: 40px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p#objective{
+        display: block;
+        float: left;
+        width: 45%;
+        line-height: 25px;
+        margin-left: 40px;
+        color: rgba(0,0,0,0.8);
+        font-size: 18px;
+    }
+
+    img.about3{
+        width: 45%;
+        margin-top: 100px;
+        float: left;
+        margin-left: 40px;
+        box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+    }
+
+    h1#information{
+        float: left;
+        margin-top: 100px;
+        margin-left: 20px;
+        font-size: 25px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p#information{
+        display: block;
+        float: left;
+        width: 45%;
+        line-height: 25px;
+        margin-left: 20px;
+        color: rgba(0,0,0,0.8);
+        font-size: 18px;
+    }
+
+    div.animate3 {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+              opacity: 0;
+              display: none;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 1;
+              display: block;
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+              opacity: 0;
+              display: none;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 1;
+              display: block;
+    }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+            opacity: 0;
+            display: none;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            opacity: 1;
+            display: block;
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+            opacity: 0;
+            display: none;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            opacity: 1;
+            display: block;
+  }
+}
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+            opacity: 0;
+            display: none;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            opacity: 1;
+            display: block;
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+            opacity: 0;
+            display: none;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            opacity: 1;
+            display: block;
+  }
+}
+
+div.animate1 {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+div.animate2 {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+div.animate4 {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+}
+</style>
+<script src="navi.js"></script>
+<body>
+    <header id="top">
+        <a href="home.html" class="logo"><img src="logo.png" alt="Dogby Logo" id="banner"></a>
+        <nav class="button">
+            <a href="#" id="cancel" onclick="cancel()"><img src="cancel.png" alt="" width="10%" id="open"/></a>
+            <a href="#" id="navicon" onclick="navi()"><img src="navicon.png" alt="" width="10%" id="close"/></a>
+            <ul id="button">
+                <img src="logo_small.png" class="nav_logo"/>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="newbie_dog.html">Newbie Dog</a></li>
+                <li><a href="family_dog.html">Family Dog</a></li>
+                <li><a href="athletic_dog.html">Athletic Dog</a></li>
+                <li><a href="guard_dog.html">Guard Dog</a></li>
+                <li><a href="hound_dog.html">Hound Dog</a></li>
+                <li><a href="dog_care.html">Dog Care</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+         </nav>
+    </header>
+
+    <article>
+        <div class="animate1">
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
+
+        <div class="logo">
+            <img src="logo_small.png"/>
+        </div>
+
+        <div class="intro">
+            <h2>DOGBY is a website that reviews dogs and </br>helps people to find suitable dogs.</h2>
+        </div>
+        </div>
+    
+        <div class="animate2">
+            <img src="about1.jpg" class="about1"/>
+            <h1 id="reason">Why we create this Website</h1>
+            <p id="reason">
+                Before this website was created, the number increased on abandoned dogs on the streetshas been a serious problem in our country. The reason this phenomenon is continuingis
+                because pet owners don't take responsibility for their pets. The irresponsible owner will abandon their pets if 
+                the pets have some permanent injured or become old. Another reasons that they didn't expect the expenses of taking 
+                care of a pet dog will be expensive. This will result in abandoning the dog if they didn't have any money left to take
+                care of their pets. Therefore, this website will help people who want a dog to pick a suitable dog and teach them how 
+                to take care of it.
+            </p>
+        </div>
+
+            <div class="empty"></div>
+
+        <div class="animate3">
+            <img src="about2.png" class="about2"/>
+            <h1 id="objective">Our Objective</h1>
+            <p id="objective">
+                DOGBY is built for letting peoples know more about dogs and how to take care of them. That way, 
+                the case of abandoning dogs will decrease and increase in people's lifestyles. Here we're helping people to get away from abandoning their dogs. 
+                We will help them by finding the best solutions for the problem they are facing. Sometimes when necessary we will also help people to hand over their dogs. 
+                We also help people that need dogs to improve their daily life by recommending them a suitable dog for them. 
+                As an example, we provided dogs that can help mental health patients in recovery.
+            </p>
+        </div>
+            
+            <div class="empty"></div>
+
+        <div class="animate4">
+            <img src="about3.png" class="about3"/>
+            <h1 id="information">What Information we have</h1>
+            <p id="information">
+                Our website has a collection of various dog details, information about dogs, characteristicsof dogs, and so on. 
+                Our website is for all variables of dog lovers and interested in dogs whether you are a child, teenager, adult, and so on. 
+                Our website collects information of many kinds of dogs to provide to people who are interested in dogs for their reference.
+            </p>
+        </div>
+            <div class="empty"></div>
+
+    </article> 
+</body>
+<footer class="main_footer">
+    <div class="footer_logo">
+        <img src="logo_small.png" alt="logo"/>
+    </div>
+    <div>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="home.html"><h2>Home</h2></a></li>
+                <li><a href="dog_care.html"><h2>Dog Care</h2></a></li>
+                <li><a href="contact_us.html"><h2>Contact Us</h2></a></li>
+                <li><a href="about_us.html"><h2>About Us</h2></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <button id="top" class="pc_top"><a href="#top"><h1>&#8593;</h1></a></button>
+    </div>
+</br></br>
+    <div class="slogan">
+        <h2>Got Money but No Friend? Go get a Dog Haiyaaaaa</h2>
+    </div>
+    <div>
+        <button id="top" class="mobile_top"><a href="#top"><h1>&#8593;</h1></a></button>
+    </div>
+    <div class="reset">
+    </br>
+    </div>
+</footer>
+</html>

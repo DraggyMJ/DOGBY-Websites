@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOGBY</title>
+    <link href="background.css" rel="stylesheet" />
+</head>
+<style>
+@media only screen and (min-width:1280px) {
+
+    /* title */
+    article div.title h1 {
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        text-decoration: underline;
+        margin-top: 200px;
+    }
+
+    /*dog*/
+    .more1{
+      display: none;
+    }
+    .more2{
+      display: none;
+    }
+    .more3{
+      display: none;
+    }
+
+    .column {
+        margin-left: 55px;
+        width: 27%;
+        float: left;
+        padding: 5px;
+    }
+
+    #mobile1 a img,#mobile2 a img,#mobile3 a img {
+    display: block;
+    width: 300px;
+    height:200px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .row a {
+      transition: 0.2s;
+    }
+
+    .row a:hover{
+        opacity: 0.9;
+    }
+
+    div.more{
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        float: left;
+        margin-left: 7px;
+        width: 32%;
+        color: red;
+    }
+
+    div.clear{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+}
+
+@media only screen and (max-width: 1279px){
+   /* title */
+   article div.title h1 {
+       clear: both;
+       display: block;
+       text-align: center;
+       font-size: 30px;
+       text-decoration: underline;
+       margin-top: 20px;
+   }
+
+   /*categories*/
+   .more{
+       display: none;
+   }
+
+   #mobile1.column a img,#mobile2.column a img,#mobile3.column a img{
+       width: 85%;
+       height: 200px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   .more1{
+       display: block;
+       text-align: center;
+       font-size: 15px;
+       margin-bottom: 90px;
+       color: red;
+   }
+
+   .more2{
+       display: block;
+       text-align: center;
+       font-size: 15px;
+       margin-bottom: 90px;
+       color: red;
+   }
+
+   .more3{
+       display: block;
+       text-align: center;
+       font-size: 15px;
+       margin-bottom: 90px;
+       color: red;
+   }
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+              opacity: 0;
+              display: none;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 1;
+              display: block;
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+              opacity: 0;
+              display: none;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 1;
+              display: block;
+    }
+  }
+
+  .title {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .row {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+            animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  }
+
+  div.more {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+            animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  }
+</style>
+<script src="navi.js"></script>
+<body>
+    <header id="top">
+        <a href="home.html" class="logo"><img src="logo.png" alt="Dogby Logo" id="banner"></a>
+        <nav class="button">
+            <a href="#" id="cancel" onclick="cancel()"><img src="cancel.png" alt="" width="10%" id="open"/></a>
+            <a href="#" id="navicon" onclick="navi()"><img src="navicon.png" alt="" width="10%" id="close"/></a>
+            <ul id="button">
+                <img src="logo_small.png" class="nav_logo"/>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="newbie_dog.html">Newbie Dog</a></li>
+                <li><a href="family_dog.html">Family Dog</a></li>
+                <li><a href="athletic_dog.html">Athletic Dog</a></li>
+                <li><a href="guard_dog.html">Guard Dog</a></li>
+                <li><a href="hound_dog.html">Hound Dog</a></li>
+                <li><a href="dog_care.html">Dog Care</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+         </nav>
+    </header>
+    <article>
+        <div class="title">
+            <h1>Top 3 Recommended Dog for Newbie Dog Category</h1>
+        </div>
+
+        <div class="row">
+            <div class="column" id="mobile1">
+                <a href="pomeranian.html"><img src="Pomeranian.png" alt="Pomeranian"></a>
+                <div class="more1">
+                    <h2>CLICK THE IMAGE TO LEARN MORE</h2>
+                </div>
+            </div>
+            <div class="column" id="mobile2">
+                <a href="pug.html"><img src="Pug-dog.png" alt="Pug"></a>
+                <div class="more2">
+                    <h2>CLICK THE IMAGE TO LEARN MORE</h2>
+                </div>
+            </div>
+            <div class="column" id="mobile3">
+                <a href="golden_retriever.html"><img src="golden-retriever.jpg" alt="Golden Retriever"></a>
+                <div class="more3">
+                    <h2>CLICK THE IMAGE TO LEARN MORE</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="more">
+            <h2>CLICK THE IMAGE TO LEARN MORE</h2>
+        </div>
+        <div class="more">
+            <h2>CLICK THE IMAGE TO LEARN MORE</h2>
+        </div>
+        <div class="more">
+            <h2>CLICK THE IMAGE TO LEARN MORE</h2>
+        </div>
+        <div class="clear">
+            <p> </p>
+        </div>
+    </article>    
+</body>
+<footer class="main_footer">
+    <div class="footer_logo">
+        <img src="logo_small.png" alt="logo"/>
+    </div>
+    <div>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="home.html"><h2>Home</h2></a></li>
+                <li><a href="dog_care.html"><h2>Dog Care</h2></a></li>
+                <li><a href="contact_us.html"><h2>Contact Us</h2></a></li>
+                <li><a href="about_us.html"><h2>About Us</h2></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <button id="top" class="pc_top"><a href="#top"><h1>&#8593;</h1></a></button>
+    </div>
+</br></br>
+    <div class="slogan">
+        <h2>Got Money but No Friend? Go get a Dog Haiyaaaaa</h2>
+    </div>
+    <div>
+        <button id="top" class="mobile_top"><a href="#top"><h1>&#8593;</h1></a></button>
+    </div>
+    <div class="reset">
+    </br>
+    </div>
+</footer>
+</html>

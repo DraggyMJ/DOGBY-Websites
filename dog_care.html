@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOGBY</title>
+    <link href="background.css" rel="stylesheet" />
+    <style>
+        article ul {
+            list-style-type: square;
+        }
+@media only screen and (min-width:1279px) {
+
+   /*title*/
+div.title h1 {
+   clear: both;
+   display: block;
+   text-align: center;
+   font-size: 50px;
+   text-decoration: underline;
+   margin-top: 200px;
+}
+
+div.image img {
+   margin-left: 40px;
+   margin-bottom: 40px;
+   float: left;
+   border: 5px solid grey;
+}
+
+div.introduction ul {
+  list-style-type: square;
+}
+
+div.introduction {
+   font-size: 18px;
+   border: 5px solid black;
+   padding: 10px;
+   margin-left: 40px;
+   max-width: 500px;
+   float: left;
+}
+
+div.introduction a:visited,div.introduction a:link{
+   text-decoration: none;
+   font-weight: bold;
+   color: red;
+}
+
+div.introduction a:hover {
+    font-weight: bold;
+    color: blue;
+}
+
+div.quality h1 {
+   clear: both;
+   margin-left: 30px;
+   margin-top: 50px;
+   text-decoration: underline;
+}
+
+div.quality p {
+  clear: both;
+  margin: 10px;
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 20px;
+  padding-left: 25px;
+  padding-right: 40px;
+  letter-spacing: 0.1px;
+  color: gray;
+}
+
+div.wetfood {
+   clear: both;
+   display: flex;
+   margin: 10px;
+}
+
+div.wetfood > div {
+   background-color: rgba(230, 204, 8, 0.826);
+   border-radius: 8px;
+   margin: 10px;
+   padding: 10px;
+}
+
+div.wetfood h2, h3 {
+   clear: both;
+   margin-left: 10px;
+   text-decoration: underline;
+}
+
+div.wetfood p {
+   font-size: 18px;
+}
+
+div.wetfood ul li{
+   list-style-type: square;
+   font-weight: bold;
+}
+
+div.vid {
+    display: block;
+    background-color: rgba(230, 204, 8, 0.826);
+    border-radius: 8px;
+    margin: 20px;
+    padding: 10px;
+}
+
+div.vid h1 {
+    text-decoration: underline;
+}
+
+div.vid p {
+    font-size: 18px;
+}
+
+div.vid video {
+    display: block;
+   width: 70%;
+   margin: 10px auto;
+}
+
+}
+
+@media only screen and (max-width:1280px) {
+
+div.title {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+div.image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 4px solid grey;
+}
+
+div.introduction {
+    display: block;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 3px solid black;
+}
+
+div.introduction a:visited,div.introduction a:link{
+   text-decoration: none;
+   font-weight: bold;
+   color: red;
+}
+
+div.quality h1 {
+    font-size: 20px;
+    clear: both;
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+div.quality p {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 16px;
+  width: 90%;
+  color: gray;
+}
+
+div.wetfood {
+   clear: both;
+   display: block;
+}
+
+div.wetfood > div {
+   background-color: rgba(230, 204, 8, 0.826);
+   border-radius: 8px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+   padding: 10px;
+   width: 90%;
+}
+
+div.wetfood h2, h3 {
+   clear: both;
+   text-decoration: underline;
+}
+
+div.wetfood p {
+   font-size: 16px;
+}
+
+div.wetfood ul li{
+   list-style-type: square;
+   font-weight: bold;
+}
+
+div.vid {
+    display: block;
+    background-color: rgba(230, 204, 8, 0.826);
+    border-radius: 8px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+div.vid h1 {
+    text-decoration: underline;
+}
+
+div.vid p {
+    font-size: 16px;
+}
+
+div.vid video {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+}
+
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+              opacity: 0;
+              display: none;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 1;
+              display: block;
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+              opacity: 0;
+              display: none;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 1;
+              display: block;
+    }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+            opacity: 0;
+            display: none;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            opacity: 1;
+            display: block;
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+            opacity: 0;
+            display: none;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            opacity: 1;
+            display: block;
+  }
+}
+
+div.title {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+div.image {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+div.introduction {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+div.vid {
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+}
+
+div.quality h1,div.quality p{
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+}
+
+div.wetfood {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+          animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+}
+
+</style>
+<script src="navi.js"></script>
+<body>
+    <header id="top">
+        <a href="home.html" class="logo"><img src="logo.png" alt="Dogby Logo" id="banner"></a>
+        <nav class="button">
+            <a href="#" id="cancel" onclick="cancel()"><img src="cancel.png" alt="" width="10%" id="open"/></a>
+            <a href="#" id="navicon" onclick="navi()"><img src="navicon.png" alt="" width="10%" id="close"/></a>
+            <ul id="button">
+                <img src="logo_small.png" class="nav_logo"/>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="newbie_dog.html">Newbie Dog</a></li>
+                <li><a href="family_dog.html">Family Dog</a></li>
+                <li><a href="athletic_dog.html">Athletic Dog</a></li>
+                <li><a href="guard_dog.html">Guard Dog</a></li>
+                <li><a href="hound_dog.html">Hound Dog</a></li>
+                <li><a href="dog_care.html">Dog Care</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+         </nav>
+    </header>
+<article>
+    <div class="title">
+        <h1>Dog Care</h1>
+    </div>
+    <div class="image">
+        <img src="dog-care.png" alt="Dog Care" width="42%"/>
+    </div>
+    <div class="introduction">
+        <p>
+            A dog can be a wonderful addition to any home, but whether you're an experienced pet parent or a first-time adopter,
+            it's important to keep your dog health and happiness a top priority. If you want to learn more, click the list to guide you.
+        </p>
+        <h1 style="font-size:25px;">Basic Dog Health Care List</h2>
+        <ul>
+            <li><a href="#before">Before You Get a Dog</a></li>
+            <li><a href="#dogfood">Quality Dog Foods and Treats</a></li>
+            <li><a href="#train">Training Your Dog</a></li>
+        </ul>
+    </div>
+    <div id="before" class="quality">
+        <h1>Before You get a Dog</h1>
+    </div>
+    <div class="vid" style="background-color:rgba(35, 45, 184, 0.535);">
+        <p>
+           This video by Adam from Animal and Veterinary Service at Nparks will show you basic things you need to know before you get a dog.
+        </p>
+        <video controls>
+            <source src="Basic Pet Care_ Dogs.mp4" type="video/mp4" />
+            <source src="Basic Pet Care_ Dogs.webm" type="video/webm" />
+            <p>Upgrade your browser to HTML5</p>
+        </video>
+    </div>
+    <div id="dogfood" class="quality">
+        <h1>Quality Dog Foods and Treats</h1>
+        <p>
+            Different dog breed have their own nutritional needs. It is advis toe research whats your dog nutritional needs. The 
+            best way to feed the dogs or puppies is feeding with a combination of wet dog food and dry dog food in addition to 
+            dental care and treats products confers the widest range of benefits. Dogs gain the widest range of health benefits
+            through a diet of dry food, wet food, dental care and treats.
+        </p>
+    </div>
+    <div class="wetfood">
+            <div>
+                <h2>Wet food</h2>
+                <p>
+                 Wet food starts with grinding the protein sources, or meat ingredients. Then a gravy that contains vitamins,
+                 minerals, and grains is added. Once those are mixed, the food is cooked and sterilized to produce the canned 
+                 product.
+                </p>
+                <h3>Benefits</h3>
+                <ul>
+                    <li>Wide Range of Flavors</li>
+                    <li>Higher Moisture Content</li>
+                    <li>Easier to Chew</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Dry food</h2>
+                <p>
+                    Dry food contains very similar ingredients, but instead of adding gravy and canning the product, the meat 
+                    mixture is pulverized in order to create a consistent dough that can be cooked. Once cooked, the dough is 
+                    extruded through specifically shaped holes to form kibble. The kibble undergoes a drying process, and then 
+                    is sprayed with fats, oils, vitamins, and minerals and packaged before the fats and oils can spoil.
+                </p>
+                <h3>Benefits</h3>
+                <ul>
+                    <li>Reduce Dental Plaque</li>
+                    <li>Healthier Gums</li>
+                    <li>Easier to Store</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Treats for Dog</h2>
+                <p>
+                    Pet treats are dietary supplements given to cats and dogs just like we eat snacks. Pets especially dogs get
+                    bored very easily and quickly and to keep them active, engaged and get their attention, owner needs to give
+                    them dog treats.
+                </p>
+                <h3>Benefits</h3>
+                <ul>
+                    <li>Be used a part of training and as a positive reward for good behaviour</li>
+                    <li>Relieve boredom and reduce destructive behaviour</li>
+                    <li>Dental treats and gnaws can promote healthy teeth and provide oral care</li>
+                </ul>
+            </div>
+    </div>
+    <div class="vid">
+        <h1>Feeding Dog Guide</h1>
+        <p>
+            If you want to know about how much you should feed your dog, you can click the video bellow made by Moonkoodog.
+        </p>
+        <video controls>
+            <source src="How much should I feed my dog_ __ Monkoodog.mp4" type="video/mp4" />
+            <source src="How much should I feed my dog_ __ Monkoodog.webm" type="video/webm" />
+            <p>Upgrade your browser to HTML5</p>
+        </video>
+    </div>
+    <div id="train" class="quality">
+        <h1>Training Your Dog</h1>
+        <p>
+            Training is an essential part of owning a dog and can be started at any age. Training builds confidence, provides mental 
+            stimulation and strengthens the human-animal bond. Before you get started, make a list of basic commands you want him 
+            to know: "sit”, "stay”, "come”, "down” or "no”. You might also want to control his barking, teach him not to beg for food
+            and how to avoid accidents in the house. These are all very doable and all it requires is consistency, praise, occasional 
+            treats and lots of patience and positivity.
+        </p>
+    </div>
+    <div class="vid" style="background-color:rgba(227, 102, 6, 0.881);">
+        <p>
+            There are a lot of ways to train your dog. This video by Zak George will teach about how to train any dogs the basics.
+        </p>
+        <h1 style="font-size: 20px;">Dog Training 101: How to Train ANY DOG the Basics</h1>
+        <video controls>
+            <source src="Dog Training 101_ How to Train ANY DOG the Basics.mp4" type="video/mp4" />
+            <source src="Dog Training 101_ How to Train ANY DOG the Basics.webm" type="video/webm" />
+            <p>Upgrade your browser to HTML5</p>
+        </video>
+</article>
+    <footer class="main_footer">
+        <div class="footer_logo">
+            <img src="logo_small.png" alt="logo"/>
+        </div>
+        <div>
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="home.html"><h2>Home</h2></a></li>
+                    <li><a href="dog_care.html"><h2>Dog Care</h2></a></li>
+                    <li><a href="contact_us.html"><h2>Contact Us</h2></a></li>
+                    <li><a href="about_us.html"><h2>About Us</h2></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <button id="top" class="pc_top"><a href="#top"><h1>&#8593;</h1></a></button>
+        </div>
+    </br></br>
+        <div class="slogan">
+            <h2>Got Money but No Friend? Go get a Dog Haiyaaaaa</h2>
+        </div>
+        <div>
+            <button id="top" class="mobile_top"><a href="#top"><h1>&#8593;</h1></a></button>
+        </div>
+        <div class="reset">
+        </br>
+        </div>
+    </footer>
+</body>
+</html>

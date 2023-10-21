@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOGBY</title>
+    <link href="background.css" rel="stylesheet" />
+</head>
+<style>
+@media only screen and (max-width: 1279px){
+    /* title */
+    article div.title h1 {
+      clear: both;
+      display: block;
+      text-align: center;
+      font-size: 40px;
+      text-decoration: underline;
+      margin-top: 20px;
+  }
+
+  /*category*/
+  div.category_button {
+      display: none;
+  }
+
+
+  article div.category h2 {
+      font-size: 20px;
+      clear: both;
+      display: block;
+      text-align: center;
+      color: red;
+  }
+
+
+  #mobile1.column a img,#mobile2.column a img{
+      display: block;
+      width: 320px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 5px solid black;
+   }
+
+  div#mobile1.column div.cate1 a {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      color: red;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 50px;
+      font-weight: bold;
+  }
+
+  div#mobile2.column div.cate2 a {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      color: red;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 50px;
+      font-weight: bold;
+  }
+  
+   /*take care of dog*/
+   article div.care h2.care {
+      text-align: center;
+      margin-top: 150px;
+      font-size: 23px;
+  }
+
+  article div.care a img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 65%;
+      border: 5px solid black;
+   }
+
+  .care1 {
+      text-align: center;
+      font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1280px) { /*pc view*/
+   
+   /* title */
+   article div.title h1 {
+      clear: both;
+      display: block;
+      text-align: center;
+      font-size: 50px;
+      text-decoration: underline;
+      margin-top: 200px;
+   }
+
+
+
+   /*category*/
+   div.cate1 {
+      display:none ;
+   }
+
+   div.cate2 {
+      display:none ;
+   }
+
+
+   article div.category h2 {
+      clear: both;
+      display: block;
+      text-align: center;
+      color: red;
+   }
+
+   .column {
+      float:left;
+      width: 32%;
+      padding: 10px;
+      display: block;
+      margin-left:195px;
+   }
+
+   .column a.family img {
+      width: 356px;
+      height: 200px;
+      margin-left: -80px;
+      border: 5px solid black;
+   }
+
+   .column a.newbie img {
+      width: 356px;
+      height: 200px;
+      margin-left: -80px;
+      border: 5px solid black;
+   }
+
+   .column a,.care a{
+      transition: 0.2s;
+   }
+
+   .column a:hover {
+      opacity: 0.9;
+   }
+
+   .care a:hover {
+      opacity: 0.9;
+   }
+
+   .row::after {
+      content: "";
+      clear: both;
+      display: table;
+   }
+
+   .column1 a {
+      text-decoration: none;
+      color: red;
+      float:left;
+      width: 36%;
+      padding: 10px;
+      display: block;
+      margin-left:147px;
+      font-size: 25px;
+      font-weight: bold;
+   }
+
+   .column1 a:hover {
+      color: red;
+      text-decoration: underline;
+      
+   }
+
+   .category_button::after {
+      content: "";
+      clear: both;
+      display: table;
+   }
+
+   /*take care of dog*/
+   article div.care h2.care {
+      text-align: center;
+      margin-top: 150px;
+      font-size: 30px;
+   }
+
+   article div.care a img {
+      float: left;
+      display: block;
+      width: 40%;
+      margin-left: 350px;
+      border: 5px solid black;
+   }
+
+   .care::after {
+      content: "";
+      clear: both;
+      display: table;
+   }
+
+   .care1 {
+      text-align: center;
+      font-size: 20px;
+   }
+
+
+}
+
+
+
+/*animation*/
+@-webkit-keyframes slide-top {
+   0% {
+     -webkit-transform: translateY(-100px);
+             transform: translateY(-100px);
+             opacity: 0;
+             display: none;
+   }
+   100% {
+     -webkit-transform: translateY(0);
+             transform: translateY(0);
+             opacity: 1;
+             display: block;
+   }
+ }
+ @keyframes slide-top {
+   0% {
+     -webkit-transform: translateY(-100px);
+             transform: translateY(-100px);
+             opacity: 0;
+             display: none;
+   }
+   100% {
+     -webkit-transform: translateY(0);
+             transform: translateY(0);
+             opacity: 1;
+             display: block;
+   }
+ }
+
+
+ .title {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.category{
+   -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  1s both;
+          animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+.row{
+   -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  2s both;
+          animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+.category_button{
+   -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  2s both;
+          animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+.care, .care1 {
+   -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  3s both;
+          animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+}
+</style>
+<script src="navi.js"></script>
+<body>
+    <header id="top">
+        <a href="home.html" class="logo"><img src="logo.png" alt="Dogby Logo" id="banner"></a>
+        <nav class="button">
+            <a href="#" id="cancel" onclick="cancel()"><img src="cancel.png" alt="" width="10%" id="open"/></a>
+            <a href="#" id="navicon" onclick="navi()"><img src="navicon.png" alt="" width="10%" id="close"/></a>
+            <ul id="button">
+                <img src="logo_small.png" class="nav_logo"/>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="newbie_dog.html">Newbie Dog</a></li>
+                <li><a href="family_dog.html">Family Dog</a></li>
+                <li><a href="athletic_dog.html">Athletic Dog</a></li>
+                <li><a href="guard_dog.html">Guard Dog</a></li>
+                <li><a href="hound_dog.html">Hound Dog</a></li>
+                <li><a href="dog_care.html">Dog Care</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+         </nav>
+    </header>
+    <article>
+        <div class="title">
+            <h1>Welcome to DOGBY</h1>
+        </div>
+
+        <div class="category">
+            <h2>RECOMMENDED CATEGORY !!!</h2>
+        </div>
+
+        <div class="row">
+            <div class="column" id="mobile1">
+                <a href="newbie_dog.html" class="newbie"><img src="newbiewithdog.png" alt="newbie"></a>
+                <div class="cate1">
+                    <a href="newbie_dog.html">NEWBIE DOG CATEGORY</a>
+                </div>
+            </div>
+            <div class="column" id="mobile2">
+                <a href="family_dog.html" class="family"><img src="family-dog.png" alt="family"></a>
+                <div class="cate2">
+                    <a href="family_dog.html">FAMILY DOG CATEGORY</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category_button">
+            <div class="column1">
+                <a href="newbie_dog.html">NEWBIE DOG CATEGORY</a>
+            </div>
+            <div class="column1">
+                <a href="family_dog.html">FAMILY DOG CATEGORY</a>
+            </div>
+        </div>
+
+        <div class="care">
+            <h2 class="care">You don't know how to take care of your dog?</br>Don't worry, we have a guideline for you</h2>
+            <a href="dog_care.html"><img src="dogcare.png" alt="how to take care"></a>
+        </div>
+        <h2 class="care1">CLICK THE IMAGE TO LEARN MORE</h2>
+    </article>
+</body>
+<footer class="main_footer">
+    <div>
+    <div class="footer_logo">
+        <img src="logo_small.png" alt="logo"/>
+    </div>
+    <div>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="home.html"><h2>Home</h2></a></li>
+                <li><a href="dog_care.html"><h2>Dog Care</h2></a></li>
+                <li><a href="contact_us.html"><h2>Contact Us</h2></a></li>
+                <li><a href="about_us.html"><h2>About Us</h2></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <button id="top" class="pc_top"><a href="#top"><h1>&#8593;</h1></a></button>
+    </div>
+ </br></br>
+    <div class="slogan">
+        <h2>Got Money but No Friend? Go get a Dog Haiyaaaaa</h2>
+    </div>
+    <div>
+        <button id="top" class="mobile_top"><a href="#top"><h1>&#8593;</h1></a></button>
+    </div>
+    <div class="reset">
+    </br>
+    </div>
+</div>
+</footer>
+</html>

@@ -1,0 +1,691 @@
+@charset "utf-8";
+@media only screen and (max-width: 480px){ /*mobile portait view*/
+   /*background*/
+   html {
+      background:white;
+      height: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      scroll-behavior: smooth;
+   }
+
+   body {
+      background-color: white; 
+      margin: 0px auto;
+      min-width: 0px;
+      max-width: 480px;   
+      width: 100%;
+      height: auto;
+   }
+
+    /*main logo img*/
+       header a.logo img {
+        width: 100%;
+   }
+
+   /*button pattern*/
+  
+   a#navicon {
+       display: contents;
+       margin-top: -4px;
+   }
+
+   a#cancel {
+     display: none;
+   }
+
+
+  img.nav_logo{
+     width: 40%;
+     display: block;
+     margin-left:23.5% ;
+     margin-right:auto;
+  }
+
+   header nav.button ul li a {
+      background-color:  rgb(0, 166, 255);
+      font-size: 1.4em;
+      line-height: 1.8em;
+      text-align: center;
+   }  
+
+   ul, ol {
+      list-style: none;
+   }
+
+   header nav ul li a {
+      text-decoration: none;
+   }
+
+   header nav ul li a {
+      color: white;
+      display: block;
+      width: 100%;
+   }
+
+   header nav ul li a:hover {
+      color: white;
+      background-color: rgb(0, 81, 254);
+   }
+
+   nav.button li {
+      display: block;
+      margin-left: -50px;
+   }
+
+   nav.button ul{
+       display: none;
+   }
+
+
+   /*navi button animation*/
+   @-webkit-keyframes flip-horizontal-bottom {
+     0% {
+       -webkit-transform: rotateX(0);
+               transform: rotateX(0);
+     }
+     100% {
+       -webkit-transform: rotateX(-180deg);
+               transform: rotateX(-180deg);
+     }
+   }
+   @keyframes flip-horizontal-bottom {
+     0% {
+       -webkit-transform: rotateX(0);
+               transform: rotateX(0);
+     }
+     100% {
+       -webkit-transform: rotateX(-180deg);
+               transform: rotateX(-180deg);
+     }
+   }
+
+
+   @-webkit-keyframes fade-in {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+   }
+   @keyframes fade-in {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+   }
+
+   @-webkit-keyframes fade-out {
+     0% {
+       opacity: 1;
+     }
+     100% {
+       opacity: 0;
+       display: none;
+     }
+   }
+   @keyframes fade-out {
+     0% {
+       opacity: 1;
+     }
+     100% {
+       opacity: 0;
+       display: none;
+     }
+   }
+
+  /*footer*/
+  div button#top.pc_top {
+     display: none;
+  }
+
+  .mobile_top{
+     display: inline-block;
+  }
+
+  footer.main_footer {
+     clear: both;
+     margin-top: 100px;
+     background-image:url("footer.png");
+     background-color: #cccccc;
+     background-repeat: repeat-y;
+     display: block;
+ }
+
+ footer div.footer_logo img{
+     display: block;
+     width: 100px;
+     height: 100px;
+     padding-top: 20px;
+     padding-bottom: 50px;
+     margin-left: 20px;
+     float: left;
+ }
+
+ footer nav.footer_nav {
+     display: none;
+ }
+
+ footer nav ul li a {
+     text-decoration: none;
+ }
+
+ footer nav ul li a {
+     color: black;
+     font-size: 12px;
+     display: block;
+     width: 100%;
+  }
+
+ footer nav ul li {
+     float: left;
+     margin-left: 20px;
+  }
+ footer nav ul li a:hover {
+     color: rgb(128, 120, 88);
+ }
+
+
+
+ footer div.slogan h2{
+     text-align: left;
+     float: left;
+     display: block;
+     width: 57%;
+     font-size: 18px;
+     margin-left: 10px;
+     margin-top: -10px;
+ }
+
+ footer button#top {
+  clear: both;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px black solid;
+  background-color: transparent;
+  transition: 0.2s;
+  color: black;
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  
+}
+
+footer button#top a{
+  display: block;
+}
+
+footer button#top a:focus,footer button#top a:visited,footer button#top a:link  {
+   text-decoration: none;
+   color: black;
+}
+
+footer button#top:hover {
+  cursor: pointer;
+  background-color: rgba(128, 120, 88,0.6);
+  color: black;
+}
+
+
+footer button#top h1 {
+  margin-top: 0px;
+}
+
+footer button#top a{
+text-decoration: none;
+}
+ 
+ footer div.reset {
+     clear: both;
+ }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 1279px){ /*tablet view*/
+   /*background*/
+   html {
+      background:rgb(160, 247, 245);
+      height: 100%;
+      background-image: url("background.jpg");
+      background-repeat: repeat;
+      background-size: 20%;
+      font-family: Arial, Helvetica, sans-serif;
+      scroll-behavior: smooth;
+   }
+
+   body {
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgb(171, 220, 229) -5px 0px 30px,  rgb(171,220,229)  -5px 0px 30px;
+      border-left: 1px solid rgb(10, 134, 164);
+      border-right: 1px solid rgb(10, 134, 164);  
+      margin: 0px auto;
+      min-width: 320px;
+      max-width: 740px;   
+      width: 100%;
+      height: auto;
+   }
+
+
+
+   /*main logo img*/
+   header a.logo img {
+   width: 100%;
+   }
+
+
+
+   /*button pattern*/
+  
+      a#navicon {
+         display: contents;
+         margin-top: -4px;
+
+     }
+  
+     a#cancel {
+       display: none;
+     }
+  
+  
+    img.nav_logo{
+       width: 30%;
+       display: block;
+       margin-left:32%;
+       margin-right:auto;
+    }
+  
+     header nav.button ul li a {
+        max-width: 740px;
+        background-color:  rgb(0, 166, 255);
+        font-size: 1.4em;
+        line-height: 1.8em;
+        text-align: center;
+        margin-left: 9.5px;
+     }  
+  
+     ul, ol {
+        list-style: none;
+     }
+  
+     header nav ul li a {
+        text-decoration: none;
+     }
+  
+     header nav ul li a {
+        color: white;
+        display: block;
+        width: 100%;
+     }
+  
+     header nav ul li a:hover {
+        color: white;
+        background-color: rgb(0, 81, 254);
+     }
+  
+     nav.button li {
+        display: block;
+        margin-left: -50px;
+     }
+  
+     nav.button ul{
+         display: none;
+     }
+  
+  
+     /*navi button animation*/
+     @-webkit-keyframes flip-horizontal-bottom {
+       0% {
+         -webkit-transform: rotateX(0);
+                 transform: rotateX(0);
+       }
+       100% {
+         -webkit-transform: rotateX(-180deg);
+                 transform: rotateX(-180deg);
+       }
+     }
+     @keyframes flip-horizontal-bottom {
+       0% {
+         -webkit-transform: rotateX(0);
+                 transform: rotateX(0);
+       }
+       100% {
+         -webkit-transform: rotateX(-180deg);
+                 transform: rotateX(-180deg);
+       }
+     }
+  
+  
+     @-webkit-keyframes fade-in {
+       0% {
+         opacity: 0;
+       }
+       100% {
+         opacity: 1;
+       }
+     }
+     @keyframes fade-in {
+       0% {
+         opacity: 0;
+       }
+       100% {
+         opacity: 1;
+       }
+     }
+  
+     @-webkit-keyframes fade-out {
+       0% {
+         opacity: 1;
+       }
+       100% {
+         opacity: 0;
+         display: none;
+       }
+     }
+     @keyframes fade-out {
+       0% {
+         opacity: 1;
+       }
+       100% {
+         opacity: 0;
+         display: none;
+       }
+     }
+
+     /*footer*/
+  div button#top.pc_top {
+   display: none;
+}
+
+.mobile_top{
+   display: inline-block;
+}
+
+footer.main_footer {
+   clear: both;
+   margin-top: 100px;
+   background-image:url("footer.png");
+   background-color: #cccccc;
+   background-repeat: repeat-y;
+   display: block;
+}
+
+footer div.footer_logo img{
+   display: block;
+   width: 120px;
+   height: 120px;
+   padding-top: 20px;
+   padding-bottom: 50px;
+   margin-left: 20px;
+   float: left;
+}
+
+footer nav.footer_nav {
+   display: none;
+}
+
+footer nav ul li a {
+   text-decoration: none;
+}
+
+footer nav ul li a {
+   color: black;
+   font-size: 12px;
+   display: block;
+   width: 100%;
+}
+
+footer nav ul li {
+   float: left;
+   margin-left: 40px;
+}
+footer nav ul li a:hover {
+   color: rgb(128, 120, 88);
+}
+
+
+
+footer div.slogan h2{
+   text-align: left;
+   float: left;
+   font-size: 18px;
+   margin-left: 10px;
+   margin-top: -10px;
+}
+
+footer button#top {
+clear: both;
+display: block;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: 2px black solid;
+background-color: transparent;
+transition: 0.2s;
+color: black;
+margin-left: 650px;
+
+}
+
+footer button#top a{
+display: block;
+}
+
+footer button#top a:focus,footer button#top a:visited,footer button#top a:link  {
+   text-decoration: none;
+   color: black;
+}
+
+footer button#top:hover {
+cursor: pointer;
+background-color: rgba(128, 120, 88,0.6);
+color: black;
+}
+
+
+footer button#top h1 {
+margin-top: 0px;
+}
+
+footer button#top a{
+text-decoration: none;
+}
+
+footer div.reset {
+   clear: both;
+}
+
+}
+
+
+@media screen and (min-width: 1280px) { /*pc view*/
+   /*background*/
+   html {
+      background:rgb(160, 247, 245);
+      height: 100%;
+      background-image: url("background.jpg");
+      background-repeat: repeat;
+      background-size: 20%;
+      font-family: Arial, Helvetica, sans-serif;
+      scroll-behavior: smooth;
+   }
+
+   body {
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgb(171, 220, 229) -5px 0px 30px,  rgb(171,220,229)  -5px 0px 30px;
+      border-left: 1px solid rgb(10, 134, 164);
+      border-right: 1px solid rgb(10, 134, 164);  
+      margin: 0px auto;
+      min-width: 320px;
+      max-width: 1200px;   
+      width: 100%;
+      height: auto;
+   }
+
+
+
+   /*main logo img*/
+   header a.logo img {
+   width: 100%;
+   }
+
+
+
+   /*button pattern*/
+   #navicon {
+   display: none;
+   }
+
+   a#cancel {
+   display: none;
+   }
+
+   .nav_logo{
+      display: none;
+   }
+
+   header nav.button ul li a {
+      background-color:  rgb(0, 166, 255);
+      font-size: 1.4em;
+      line-height: 1.8em;
+      text-align: center;
+      border-radius: 8px;
+      transition: background-color 0.2s;
+   }
+
+   ul, ol {
+      list-style: none;
+   }
+
+   header nav ul li a {
+      text-decoration: none;
+   }
+
+   header nav ul li a {
+      color: white;
+      display: block;
+      width: 100%;
+   }
+
+   header nav ul li a:hover {
+      color: white;
+      background-color: rgb(0, 81, 254);
+   }
+
+   nav.button li {
+      display: block;
+      float: left;
+      width: 16.66%;
+      margin-right: 35px;
+      margin-bottom: 15px;
+      float: left;
+      position: relative;
+   }
+
+   /*footer*/
+   .pc_top {
+      display:inline-block;
+   }
+
+   .mobile_top {
+      display: none;
+   }
+
+   footer.main_footer {
+      clear: both;
+      margin-top: 100px;
+      background-image:url("footer.png");
+      background-color: #cccccc;
+      display: block;
+  }
+
+  footer div.footer_logo {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      margin-left: 50px;
+      float: left;
+  }
+
+  footer div.footer_logo img{
+      width: 200px;
+      height: 200px;
+  }
+
+  footer nav.footer_nav {
+      display: block;
+      float: left;
+  }
+
+  footer nav ul li a {
+      text-decoration: none;
+  }
+
+  footer nav ul li a {
+      color: black;
+      font-size: 12px;
+      display: block;
+      width: 100%;
+   }
+
+  footer nav ul li {
+      float: left;
+      margin-left: 20px;
+   }
+  footer nav ul li a:hover {
+      color: rgb(128, 120, 88);
+  }
+
+  footer button#top {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px black solid;
+      background-color: transparent;
+      margin-top: 25px;
+      margin-left: 420px;
+      transition: 0.2s;
+      color: black;
+  }
+ 
+  footer button#top a{
+      display: block;
+  }
+
+  footer button#top a:focus,footer button#top a:visited,footer button#top a:link  {
+      text-decoration: none;
+      color: black;
+  }
+
+   footer button#top:hover {
+      cursor: pointer;
+      background-color: rgba(128, 120, 88,0.6);
+      color: black;
+   }
+
+
+   footer button#top h1 {
+      margin-top: 5px;
+  }
+
+   footer button#top a{
+   text-decoration: none;
+  }
+
+   footer div.slogan h2{
+      text-align: left;
+      float: left;
+      margin-left: 60px;
+      margin-top: -20px;
+  }
+  
+  footer div.reset {
+      clear: both;
+  }
+
+}
+
+

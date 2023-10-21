@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOGBY</title>
+    <link href="background.css" rel="stylesheet" />
+</head>
+<style>
+@media only screen and (min-width:1280px) {
+   
+   /* title */
+   div.head h2 {
+    clear: both;
+      display: block;
+      text-align: bottom;
+      font-size: 42px;
+      margin-top: 200px;
+      margin-left:25px;
+    
+   }
+
+
+   div.title h1 {
+      clear: both;
+      display: block;
+      text-align: left;
+      font-size: 50px;
+      text-decoration: underline;
+      margin-top: 70px;
+      margin-left:80px;
+   }
+
+
+
+   /*category*/
+div.logo a img{
+
+    display: block;
+    float:left;
+    width: 300px;
+    height: 300px;
+    margin-left:60px;
+
+}
+  
+div.logo address{
+    display: block;
+    float:left;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-left: 50px;
+    margin-top: -30px;
+}
+    
+/*form*/
+h2.form_title{
+    clear: both;
+    display: block;
+    margin-top: 400px;
+    font-size: 42px;
+    margin-left: 25px;
+}
+
+div.form form#feedForm {
+    clear: both;
+    display: block;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+div.form label {
+    text-decoration: underline;
+} 
+
+div.form form input.name{
+    width:688px;
+    height:40px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+textarea{
+    width: 85%;
+    height: 200px;
+    font-size: 20px;
+    box-sizing: border-box;
+    box-sizing: 1px solid gray;
+    resize: none;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+input#submit[type=button],input#cancel[type=button] {
+    margin-top: 15px;
+    font-size: 20px;
+    background-color:rgb(210,239,245);
+    color: black;
+    border:rgb(159, 182, 186) 1px solid ;
+    padding: 14px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input#submit[type=button] {
+    width: 30%;
+}
+
+input#cancel[type=button] {
+    width: 20%;
+}
+
+input#submit[type=button]:hover,input#cancel[type=button]:hover {
+    background-color: rgb(197, 229, 233);
+    text-decoration: none;
+}
+
+
+}
+
+@media only screen and (max-width: 1279px){
+       /* title */
+    div.head h2 {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 20px;
+    
+   }
+
+
+   div.title h1 {
+      clear: both;
+      display: block;
+      text-align: center;
+      font-size: 35px;
+      text-decoration: underline;
+      margin-top: 20px;
+   }
+
+
+
+   /*category*/
+div.logo a img{
+
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+  
+div.logo address{
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+/*form*/
+h2.form_title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+div.form form#feedForm {
+    clear: both;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+div.form label {
+    text-decoration: underline;
+} 
+
+div.form form input.name{
+    width:200px;
+    height:30px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+textarea{
+    width: 85%;
+    height: 200px;
+    font-size: 15px;
+    box-sizing: border-box;
+    box-sizing: 1px solid gray;
+    resize: none;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+input#submit[type=button],input#cancel[type=button] {
+    margin-top: 10px;
+    font-size: 10px;
+    background-color:rgb(210,239,245);
+    color: black;
+    border:rgb(159, 182, 186) 1px solid ;
+    padding: 10px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input#submit[type=button] {
+    width: 60%;
+}
+
+input#cancel[type=button] {
+    width: 40%;
+}
+
+input#submit[type=button]:hover,input#cancel[type=button]:hover {
+    background-color: rgb(197, 229, 233);
+    text-decoration: none;
+}
+}
+
+/*animation*/
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+              opacity: 0;
+              display: none;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 1;
+              display: block;
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+              opacity: 0;
+              display: none;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 1;
+              display: block;
+    }
+  }
+
+  article {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+</style>
+<script src="navi.js"></script>
+<script>
+    function confirmSub(){
+        let x = document.forms["feedForm"]["name"].value;
+        let y = document.forms["feedForm"]["feedback"].value;
+        if (x == ""){
+            alert("Your name cannot be blank");
+            return false;
+        } else{
+            if (y == ""){
+                alert("Your feedback cannot be blank");
+                return false;
+            }
+            else {
+                if (confirm("Are you sure to submit your feedback?")==1){
+                    var name = document.getElementById('name').value;
+                    alert(name + ", thanks for your feedback. We will keep improving our website as we can.");
+                    window.location.href = 'home.html';
+                    return true;
+                }
+            }
+        }
+        
+    }
+
+    function cancelSub(){
+        if (confirm("Are you sure you want to cancel your feedback?")==1){
+            window.location.reload();
+            return true;
+    }
+}
+
+
+</script>
+<body>
+    <header id="top">
+        <a href="home.html" class="logo"><img src="logo.png" alt="Dogby Logo" id="banner"></a>
+        <nav class="button">
+            <a href="#" id="cancel" onclick="cancel()"><img src="cancel.png" alt="" width="10%" id="open"/></a>
+            <a href="#" id="navicon" onclick="navi()"><img src="navicon.png" alt="" width="10%" id="close"/></a>
+            <ul id="button">
+                <img src="logo_small.png" class="nav_logo"/>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="newbie_dog.html">Newbie Dog</a></li>
+                <li><a href="family_dog.html">Family Dog</a></li>
+                <li><a href="athletic_dog.html">Athletic Dog</a></li>
+                <li><a href="guard_dog.html">Guard Dog</a></li>
+                <li><a href="hound_dog.html">Hound Dog</a></li>
+                <li><a href="dog_care.html">Dog Care</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+         </nav>
+    </header>
+    <article>
+    <div class="head">
+        <h2> If have any question you can contact us by email or call us!!</h2>
+
+    </div>
+   
+    
+    <div class = "title">
+        <h1>Contact Us</h1>
+      
+    </div>
+    <div class="logo">
+        <a href="home.html" class="logo"><img src="logo_small.png" alt="Dogby Logo"></a>
+        <address>
+            <h2>Our Email :</h2>
+            <a href="dogby@gmail.com">dogby@gmail.com</a>
+            <h2>Contact number :</h2>
+            <a href="tel : 012-3456-7890">012-3456-7890 </a>
+        </address>
+    </div>
+    <h2 class="form_title">Do you like our website? Feedback us by sending message!</h2>
+    <div class="form">
+        <form name="feedForm" id="feedForm">
+            <br/>
+            <label for="name">Please Insert Your Name :</label><br/>
+            <input class="name" type="text" id="name" name="name" placeholder="Please Enter Your Name" required/><br/> <br/>
+            <label for="feedback">Feedback :</label><br/>
+            <textarea class="feedback" id="feedback" placeholder="Enter your Feedback Here" required></textarea>
+            <br/>
+            <input type="button"  id="submit" value="Click Me to Submit your Feedback!" onclick="confirmSub()"/>
+            <input type="button" id="cancel"  value="Cancel submission" onclick="cancelSub()"/>
+        </form>
+    </div>
+    </article>
+ </body>
+ <footer class="main_footer">
+    <div class="footer_logo">
+        <img src="logo_small.png" alt="logo"/>
+    </div>
+    <div>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="home.html"><h2>Home</h2></a></li>
+                <li><a href="dog_care.html"><h2>Dog Care</h2></a></li>
+                <li><a href="contact_us.html"><h2>Contact Us</h2></a></li>
+                <li><a href="about_us.html"><h2>About Us</h2></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <button id="top" class="pc_top"><a href="#top"><h1>&#8593;</h1></a></button>
+    </div>
+</br></br>
+    <div class="slogan">
+        <h2>Got Money but No Friend? Go get a Dog Haiyaaaaa</h2>
+    </div>
+    <div>
+        <button id="top" class="mobile_top"><a href="#top"><h1>&#8593;</h1></a></button>
+    </div>
+    <div class="reset">
+    </br>
+    </div>
+</footer>
+ </html>
